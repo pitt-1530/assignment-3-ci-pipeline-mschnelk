@@ -14,7 +14,7 @@ public class PlaylistRecommender {
             sum += b;
         
         if (sum/bpms.size() >= 140) return "HIGH";
-        if (sum/bpms.size() < 140) return "LOW";
+        if (sum/bpms.size() < 100) return "LOW";
         else return "MEDIUM";
     }
 

@@ -5,6 +5,9 @@ import java.util.List;
 public class PlaylistRecommender {
 
     public static String classifyEnergy(List<Integer> bpms) {
+        if (bpms == null || bpms.size() == 0)
+            throw new IllegalArgumentException();
+
         int sum = 0;
     
         for (Integer b : bpms)  
